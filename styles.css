@@ -1,0 +1,148 @@
+/* Base styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* Navbar (like getbootstrap.com) */
+.navbar {
+    background-color: #000000;
+    padding: 1rem 0;
+    border-bottom: 1px solid #666666;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-brand {
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* Content Sections */
+.hero {
+    background-color: #000000;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 1px solid #666666;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin: 0 0 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+.features {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.feature-item {
+    flex: 1 1 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.feature-item h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.feature-item a {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+.feature-item a:hover {
+    color: #ffffff;
+}
+
+/* Footer (like getbootstrap.com) */
+footer {
+    background-color: #000000;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #666666;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #cccccc;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .nav-links {
+        margin-top: 10px;
+    }
+    .nav-links li {
+        margin: 10px 15px;
+    }
+    .feature-item {
+        flex: 1 1 100%;
+    }
+}
